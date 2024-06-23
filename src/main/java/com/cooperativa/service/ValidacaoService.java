@@ -1,11 +1,14 @@
 package com.cooperativa.service;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
 public class ValidacaoService {
-    private static final String VALIDACAO_URL = "https://run.mocky.io/v3/bc13ee59-4783-491d-ac7a-d1ea4bdb7bf4";
+
+    @Value("${url.cpf}")
+    private String VALIDACAO_URL;
 
     public boolean isAssociadoAbleToVote(String cpf) {
         RestTemplate restTemplate = new RestTemplate();

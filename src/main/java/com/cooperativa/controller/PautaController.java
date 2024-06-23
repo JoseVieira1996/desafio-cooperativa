@@ -15,8 +15,6 @@ public class PautaController {
 
     @PostMapping
     public Pauta criarPauta(@RequestBody PautaDTO pautaDTO) {
-        Pauta pauta = new Pauta();
-        pauta.setTitulo(pautaDTO.getTitulo());
-        return pautaService.criarPauta(pauta);
+        return pautaService.criarPauta(pautaDTO);
     }
 }

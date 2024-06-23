@@ -1,5 +1,6 @@
 package com.cooperativa.controller;
 
+import com.cooperativa.dto.ResultadoDTO;
 import com.cooperativa.dto.SessaoDTO;
 import com.cooperativa.model.Sessao;
 import com.cooperativa.service.SessaoService;
@@ -19,7 +20,7 @@ public class SessaoController {
     }
 
     @GetMapping("/{id}/resultado")
-    public String resultadoVotacao(@PathVariable Long id) {
+    public ResultadoDTO resultadoVotacao(@PathVariable Long id) {
         return sessaoService.resultadoVotacao(id);
     }
 }

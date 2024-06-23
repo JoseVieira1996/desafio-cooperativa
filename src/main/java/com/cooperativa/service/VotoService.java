@@ -2,11 +2,12 @@ package com.cooperativa.service;
 
 import com.cooperativa.converter.Converter;
 import com.cooperativa.dto.VotoDTO;
+import com.cooperativa.exception.IllegalArgumentException;
+import com.cooperativa.exception.ResourceNotFoundException;
 import com.cooperativa.model.Sessao;
 import com.cooperativa.model.Voto;
 import com.cooperativa.repository.SessaoRepository;
 import com.cooperativa.repository.VotoRepository;
-import org.apache.kafka.common.errors.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

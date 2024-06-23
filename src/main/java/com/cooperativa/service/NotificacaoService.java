@@ -5,7 +5,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class NotificationService {
+public class NotificacaoService {
     @Autowired
     private KafkaTemplate<String, String> kafkaTemplate;
 

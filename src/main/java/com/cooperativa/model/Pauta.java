@@ -15,5 +15,4 @@ public class Pauta {
     private Long id;
     private String titulo;
 
-    // Getters e Setters
 }
