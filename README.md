@@ -48,7 +48,20 @@ Da maneira como foi configurado o Spring, após a 1ª requisição, serão criad
 
 **Swagger**
 
-http://localhost:8086/v3/api-docs
+http://localhost:8086/v3/api-docs e http://localhost:8086/swagger-ui/index.html
 
 
+Os CPF's abaixo estão aptos a votar:
+
+31531635024,
+81540428001,
+88665686002,
+02498524037,
+94524393005,
+72239222069
+
+**Kafka**
+
+
+Ainda será implementado
 
